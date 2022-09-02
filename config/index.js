@@ -20,12 +20,12 @@ export const config = {
      * ]
      */
     USERS: [
-      {name: '可心乖乖', id:"ooNga68gMivajU6MM1BOJWwx5sTQ"}, 
+      {name:'可心乖乖', id:"ooNga68gMivajU6MM1BOJWwx5sTQ"}, 
       
     ],
     // 接收成功回调消息的微信号，（一般来说只填自己的微信号, name填不填无所谓）
     CALLBACK_USERS: [ooNga60fJWEfgZ2LnNVKzG5zhOJc]
-      {name: '自己',id:"ooNga60fJWEfgZ2LnNVKzG5zhOJc"}, 
+      {name:'自己',id:"ooNga60fJWEfgZ2LnNVKzG5zhOJc"}, 
     ],
      
     /**
