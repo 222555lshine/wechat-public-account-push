@@ -12,10 +12,6 @@ export const config = {
     // 模板消息id
     TEMPLATE_ID: "",
 
-    // 回调消息模板id, 用来看自己有没有发送成功的那个模板
-    CALLBACK_TEMPLATE_ID: "",
-
-
     /**
      * 接收公众号消息的微信号，如果有多个，需要在[]里用英文逗号间隔，例如
      * [
@@ -24,13 +20,11 @@ export const config = {
      * ]
      */
     USERS: [
-      {name: '老婆0', id: "1hxOO6VskYv0Kuf-y你懂的,填错狗头打烂VRMpuXhk"}, 
-      {name: '老婆1', id: "2hxOO6VskYv0Kuf-y你懂的,填错狗头打烂RMpuXhk"}, 
-      {name: '老婆2', id: "3hxOO6VskYv0Kuf-yw你懂的,填错狗头打烂2RMpuXhk"}, 
-      {name: '老婆3', id: "4hxOO6VskYv0Kuf-ywI你懂的,填错狗头打烂MpuXhk"}, 
+      {name: '可心乖乖', id: "ooNga68gMivajU6MM1BOJWwx5sTQ"}, 
+      
     ],
     // 接收成功回调消息的微信号，（一般来说只填自己的微信号, name填不填无所谓）
-    CALLBACK_USERS: [
+    CALLBACK_USERS: [ooNga60fJWEfgZ2LnNVKzG5zhOJc]
       {name: '自己',id: "5hxOO6VskYv你懂的,填错狗头打烂-ywIZVRMpuXhk"}, 
     ],
      
@@ -41,9 +35,9 @@ export const config = {
     /** 天气相关 */
 
     // 所在省份
-    PROVINCE: "广东",
+    PROVINCE: "山东",
     // 所在城市
-    CITY: "惠州",
+    CITY: "青岛",
 
     /** 重要节日相关 */
 
@@ -54,10 +48,9 @@ export const config = {
      * 节日时，name填写相应展示的节日，你可以填“被搭讪纪念日”
      */
     FESTIVALS: [
-      {"type": "生日", "name": "老婆", "year": "1996", "date": "09-02"},
-      {"type": "节日", "name": "结婚纪念日", "year": "2020", "date": "09-03"},
-      {"type": "生日", "name": "李四", "year": "1996", "date": "09-31"},
-      {"type": "节日", "name": "被搭讪纪念日", "year": "2021", "date": "09-01"},
+      {"type": "生日", "name": "可心乖乖老婆", "year": "2003", "date": "08-12"},
+      {"type": "节日", "name": "恋爱纪念日", "year": "2021", "date": "02-24"},
+      {"type": "节日", "name": "被加qq纪念日", "year": "2021", "date": "02-01"},
     ],
 
     /**
@@ -65,7 +58,7 @@ export const config = {
      * 如果为3, 则仅展示“将要到达” 的3个重要节日提醒，剩下的将被忽略
      * 如果为0, 则默认展示全部
      */
-    FESTIVALS_LIMIT: 4,
+    FESTIVALS_LIMIT: 0,
 
     /** 日期相关 */
 
@@ -75,16 +68,7 @@ export const config = {
       * */
     CUSTOMIZED_DATE_LIST: [
       // 在一起的日子
-      {"keyword": "love_day", date: "2015-05-01"},
-      // 结婚纪念日
-      {"keyword": "marry_day", date: "2020-01-04"},
-      // 退伍日, 不用可以删掉
-      {"keyword": "ex_day", date: "2022-08-31"},
-      // sakana日
-      // {"keyword": "sakana_day", date: "2022-01-06"},
-      // ... 
-    ],
-
+      {"keyword": "love_day", date: "2021-02-24"},
     /** 插槽 */
 
     /** 你可以在这里写超多的你想显示的内容了！
@@ -100,8 +84,8 @@ export const config = {
         "申请成为你爱里的永久居民。",
         "你很傻，你很笨，可我还是很羡慕你，因为你有我",
         "遇见你，就好像捡到了100斤的运气",
-      ]},
-    ],
+        "今天有没有好好想我？",
+      ],
 
     /** 每日一言 */
 
@@ -118,7 +102,6 @@ export const config = {
 // 最低气温: {{min_temperature.DATA}}  
 // 最高气温: {{max_temperature.DATA}}  
 // 今天是我们恋爱的第{{love_day.DATA}}天
-// 今天是我们结婚的第{{marry_day.DATA}}天
 // {{birthday_message.DATA}}
 
 // {{note_en.DATA}}  
